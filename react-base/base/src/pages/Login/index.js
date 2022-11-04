@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Container } from '../../styles/GlobalStyles';
 import { Title, Paragraph } from './styled';
+
+import axios from '../../services/axios';
 
 export default function Login() {
   return (
