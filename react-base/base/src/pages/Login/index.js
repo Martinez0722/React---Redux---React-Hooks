@@ -13,7 +13,7 @@ export default function Login() {
   function handleClick(e) {
     e.preventDefault();
 
-    dispatch(exampleActions.clicaBotao());
+    dispatch(exampleActions.clicaBotaoRequest());
   }
   return (
     <Container>
