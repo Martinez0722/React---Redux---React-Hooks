@@ -8,23 +8,23 @@ import * as exampleActions from '../../store/modules/example/actions';
 import axios from '../../services/axios';
 
 export default function Login() {
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
-  function handleClick(e) {
-    e.preventDefault();
+    function handleClick(e) {
+        e.preventDefault();
 
-    dispatch(exampleActions.clicaBotaoRequest());
-  }
-  return (
-    <Container>
-      <Title>
-        Login
-        <small>salut</small>
-      </Title>
-      <Paragraph>Lorem</Paragraph>
-      <button type="button" onClick={handleClick}>
-        Enviar
-      </button>
-    </Container>
-  );
+        dispatch(exampleActions.clicaBotaoRequest());
+    }
+    return (
+        <Container>
+            <Title>
+                Login
+                <small>salut</small>
+            </Title>
+            <Paragraph>Lorem</Paragraph>
+            <button type="button" onClick={handleClick}>
+                Enviar
+            </button>
+        </Container>
+    );
 }
