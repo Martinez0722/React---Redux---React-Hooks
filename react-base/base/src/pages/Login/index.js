@@ -17,6 +17,7 @@ export default function Login(props) {
     const [password, setPassword] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
+
         let formErrors = false;
         if (!isEmail(email)) {
             formErrors = true;
