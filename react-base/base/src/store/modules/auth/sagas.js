@@ -8,8 +8,9 @@ import get from 'lodash';
 
 function* loginRequest({ payload }) {
     try {
-        const response = yield call(axios.post, '/tokens', payload);
+        const response = yield call(axios.post, '/tokens/', payload);
         yield put(actions.loginSuccess({ ...response.data }));
+
         toast.success('login com sucesso');
         axios.defaults.headers.Authorization = `Bearer ${response.data.token}`;
     } catch (e) {
